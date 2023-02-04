@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  background-color: #EC715F;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 1024px;
+  margin: 0 auto;
+}
+nav > :first-child {
+  margin-right: auto;
+}
+
+.logo {
+  height: 70px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list-item {
+  list-style: none;
+  margin: 0 30px;
+  font-size: 16px;
+  color: #FAFAFA;
+}
+
+.main-visual {
+  width: 100%;
+  height: 650px;
+  background-image: url(img/mv.png);
+  background-size: cover;
+  background-position: center;
+}
+.main-visual-text {
+  color: #FAFAFA;
+  font-size: 64px;
+  text-align: center;
+  padding-top: 200px;
+}
+.small-text {
+  color: #FAFAFA;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.portfolio {
+  background-color: #ECEFF1;
+  width: 100%;
+}
+.portfolio-text {
+  font-size: 32px;
+  color: #000000;
+  position: relative;
+}
+.explanatory-note {
+margin: 30px 0;
+}
+
+.container {
+  width: 920px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.portfolio-text:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -8px;/*線の上下位置*/
+  display: inline-block;
+  width: 70px;/*線の長さ*/
+  height: 3px;/*線の太さ*/
+  transform: translateX(-50%);/*位置調整*/
+  background-color: #EC715F;/*線の色*/
+}
+
+.img-group {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 90px;
+}
+.img1 {
+  width: 300px;
+  height: 250px;
+  background-image: url(img/sketch.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 0 10px 10px 0;
+}
+.img2 {
+  width: 300px;
+  height: 250px;
+  background-image: url(img/websuku.png);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+}
+.img3 {
+  width: 300px;
+  height: 250px;
+  background-image: url(img/write.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 0 0 10px 10px;
+}
+.img4 {
+  width: 300px;
+  height: 250px;
+  background-image: url(img/webcamp.png);
+  background-size: cover;
+  background-position: center;
+  margin-right: 10px;
+}
+.img5 {
+  width: 300px;
+  height: 250px;
+  background-image: url(img/talk.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.img6 {
+  width: 300px;
+  height: 250px;
+  background-image: url(img/webcamp-mother.png);
+  background-size: cover;
+  background-position: center;
+  margin-left: 10px;
+}
