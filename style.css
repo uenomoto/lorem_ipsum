@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color:inherit;
+}
+
+.hamburger {
+  display: none;
+}
+
 header {
   width: 100%;
   height: 70px;
@@ -34,6 +43,9 @@ nav > :first-child {
   margin: 0 30px;
   font-size: 16px;
   color: #FAFAFA;
+}
+.nav-list-item:active {
+  color: #1a720d;
 }
 
 .main-visual {
@@ -212,8 +224,6 @@ i {
 .profile {
   width: 100%;
   background-color: #ECEFF1;
-  /*↓消す*/
-  height: 800px;
 }
 .profile-container {
   width: 1024px;
@@ -239,22 +249,214 @@ i {
 }
 .explanatory-note3 {
   text-align: center;
-  margin: 30px 0;
+  margin: 30px 0 10px 0;
   font-size: 16px;
   color: #000000;
 }
 .profile-group {
   display: flex;
+  padding-bottom: 90px;
+}
+.profile-group h5 {
+  font-size: 20px;
+  padding: 20px 0 5px 0;
+}
+.profile-group p {
+  font-size: 16px;
+  color: #000000;
 }
 .profile-img {
   width: 512px;
+  text-align: center;
 }
 .profile-img img {
   width: 250px;
   height: 250px;
+  margin-top: 20px;
   border-radius:50%;
 }
 
 .my-profile {
   width: 512px;
+}
+
+.contact {
+  width: 100%;
+}
+.contact-container {
+  width: 800px;
+  margin: 0 auto;
+}
+.contact-text {
+  font-size: 32px;
+  color: #000000;
+  text-align: center;
+  padding-top: 90px;
+  position: relative;
+}
+.contact-text:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -8px;/*線の上下位置*/
+  display: inline-block;
+  width: 70px;/*線の長さ*/
+  height: 3px;/*線の太さ*/
+  transform: translateX(-50%);/*位置調整*/
+  background-color: #EC715F;/*線の色*/
+}
+
+.mail h5 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.mail {
+  width: 400px;
+}
+.contact-group {
+  display: flex;
+  padding-bottom: 90px;
+}
+.sns {
+  width: 400px;
+}
+.sns i {
+  font-size: 50px;
+  margin-right: 20px;
+}
+.sns h5 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.tel {
+  margin-top: 20px;
+}
+
+footer {
+  width: 100%;
+  height: 60px;
+  background-color: #EC715F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer p {
+  font-size: 16px;
+  color: #FAFAFA;
+}
+
+/*ハンバーガー*/
+.hamburger {
+    display: none;
+    position: fixed;
+    z-index : 3;
+    right : 13px;
+    top   : 5px;
+    width : 42px;
+    height: 42px;
+    cursor: pointer;
+    text-align: center;
+    -webkit-transition: 0.5s all;
+    -moz-transition   : 0.5s all;
+    transition        : 0.5s all;
+  }
+  .hamburger span {
+    display : block;
+    position: absolute;
+    width   : 30px;
+    height  : 2px ;
+    left    : 6px;
+    background: #FAFAFA;
+  }
+  .hamburger span:nth-child(1) {
+    top: 10px;
+  }
+  .hamburger span:nth-child(2) {
+    top: 20px;
+  }
+  .hamburger span:nth-child(3) {
+    top: 30px;
+  }
+
+  .hamburger.active{
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+.hamburger.active span:nth-child(1) {
+  top : 16px;
+  left: 6px;
+  background : #fff;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform   : rotate(-45deg);
+  transform        : rotate(-45deg);
+}
+.hamburger.active span:nth-child(2) {
+  top: 16px;
+  background : #fff;
+  -webkit-transform: rotate(45deg);
+  -moz-transform   : rotate(45deg);
+  transform        : rotate(45deg);
+}
+.hamburger.active span:nth-child(3) {
+  opacity: 0;
+}
+
+nav2.globalMenuSp {
+  position: fixed;
+  z-index : 2;
+  top  : 0;
+  left : 0;
+  color: #fff;
+  background: rgba(0,0,0,0.7);
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity .6s ease, visibility .6s ease;
+}
+
+nav2.globalMenuSp ul {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+nav2.globalMenuSp ul li {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  transition: .4s all;
+}
+nav2.globalMenuSp ul li:last-child {
+  padding-bottom: 0;
+}
+nav2.globalMenuSp ul li:hover{
+  background :#ddd;
+}
+
+nav2.globalMenuSp ul li a {
+  display: block;
+  color: #fff;
+  padding: 1em 0;
+  text-decoration :none;
+}
+
+/* このクラスを、jQueryで付与・削除する */
+nav2.globalMenuSp.active {
+  opacity: 100;
+}
+
+.globalMenuSp {
+  display: none;
+}
+
+.nav-list-item2 {
+  list-style: none;
+  font-size: 35px;
+  margin: 35px 0;
+  color: #FAFAFA;
+}
+
+.nav-list-item2:active {
+  color: #1a720d;
 }

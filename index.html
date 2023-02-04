@@ -6,6 +6,8 @@
     <script src="https://kit.fontawesome.com/e07c99cf8f.js" crossorigin="anonymous"></script>
     <!-- CSSファイルの読み込み -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="resupon.css" />
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <title>Lorem ipsum</title>
   </head>
 
@@ -14,23 +16,34 @@
   <header>
     <nav>
       <img class="logo" src="img/logo.png">
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <ul class="nav-list">
-        <li class="nav-list-item">Portfolio</li>
-        <li class="nav-list-item">Feature</li>
-        <li class="nav-list-item">Profile</li>
-        <li class="nav-list-item">Contact</li>
+        <li class="nav-list-item"><a href="#">Portfolio</a></li>
+        <li class="nav-list-item"><a href="#">Feature</a></li>
+        <li class="nav-list-item"><a href="#">Profile</a></li>
+        <li class="nav-list-item"><a href="#">Contact</a></li>
       </ul>
     </nav>
+    <nav2 class="globalMenuSp">
+        <li class="nav-list-item2">Portfolio</li>
+        <li class="nav-list-item2">Feature</li>
+        <li class="nav-list-item2">Profile</li>
+        <li class="nav-list-item2">Contact</li>
+      </nav2>
   </header>
 
   <div class="main-visual">
-    <p class="main-visual-text">Lorem Ipsum</p>
+    <h1 class="main-visual-text">Lorem Ipsum</h1>
     <p class="small-text">simply dummy text of the printing</p>
   </div>
 
   <div class="portfolio">
     <div class="container">
-     <p class="portfolio-text">Portfolio</p>
+     <h1 class="portfolio-text">Portfolio</h1>
      <p class="explanatory-note">
        It is a long established fact that a reader will be distracted by the readable</br>
        content of a page when looking at its layout.</br>
@@ -49,7 +62,7 @@
 
   <div class="feature">
     <div class="feature-container">
-      <p class="feature-text">Feature</p>
+      <h1 class="feature-text">Feature</h1>
       <p class="explanatory-note2">
         It is a long established fact that a reader will be distracted by the readable</br>
         content of a page when looking at its layout.</br>
@@ -103,7 +116,7 @@
 
   <div class="profile">
     <div class="profile-container">
-      <p class="profile-text">Profile</p>
+      <h1 class="profile-text">Profile</h1>
       <p class="explanatory-note3">
         It is a long established fact that a reader will be distracted by the readable</br>
         content of a page when looking at its layout.</br>
@@ -116,21 +129,58 @@
         <div class="my-profile">
           <h5>MyName</h5>
           <p>
-            Contrary to popular belief, Lorem Ipsum is not simply random
-            text. It has roots in a piece of classical Latin literature from 45
-            BC, making it over 2000 years old. Richard McClintock, a Latin
-            professor at Hampden-Sydney College in Virginia, looked up
-            one of the more obscure Latin words, consectetur
+            上野　元希<br>
+            １９９５年生まれ静岡で育ち<br>
+            静岡で息を潜めてます！
           </p>
           <h5>MySkills</h5>
-          <p>HTML/CSS,JavaScript,JQuery,PhotoShop</p>
+          <p>HTML/CSS,JavaScript,JQuery</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact">
+    <div class="contact-container">
+      <h1 class="contact-text">Contact</h1>
+      <p class="explanatory-note2">
+        It is a long established fact that a reader will be distracted by the readable</br>
+        content of a page when looking at its layout.</br>
+        The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
+      </p>
+      <div class="contact-group">
+        <div class="mail">
+          <h5>Mail</h5>
+          <a href="#">m.u19953001@gmail.com</a>
+          <h5 class="tel">Tel</h5>
+          <a href="#">123-4567-890</a>
+        </div>
+        <div class="sns">
+          <h5>SNS</h5>
+          <i class="fab fa-youtube"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
         </div>
       </div>
     </div>
   </div>
 
     <footer>
-
+      <p>©2023 Webcamp by:motoki ueno</p>
     </footer>
 </body>
 </html>
+
+<script>
+  $(function() {
+    $('.hamburger').click(function() {
+        $(this).toggleClass('active');
+
+        if ($(this).hasClass('active')) {
+            $('.globalMenuSp').addClass('active');
+        } else {
+            $('.globalMenuSp').removeClass('active');
+        }
+    });
+});
+</script>
