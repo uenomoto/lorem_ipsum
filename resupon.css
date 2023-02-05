@@ -12,9 +12,10 @@
   .hamburger {
     display: block;
   }
-  .globalMenuSp {
-  display: block;
-}
+  .globalMenuSp.active {
+    display: block;
+  }
+
   .logo {
     height: 50px;
   }
@@ -97,6 +98,9 @@
    margin-top: 20px;
  }
  .sns i {
+   margin-right: 8px;
+ }
+ a.fa-twitter {
    margin-right: 8px;
  }
  footer {

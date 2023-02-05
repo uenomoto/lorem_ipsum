@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/*ここでaリンクは色が元に戻り下線が消える*/
 a {
   text-decoration: none;
   color:inherit;
@@ -328,6 +328,10 @@ i {
   font-size: 20px;
   margin-bottom: 5px;
 }
+a.fa-twitter {
+  font-size: 50px;
+  margin-right: 20px;
+}
 .tel {
   margin-top: 20px;
 }
@@ -400,8 +404,8 @@ footer p {
 .hamburger.active span:nth-child(3) {
   opacity: 0;
 }
-
-nav2.globalMenuSp {
+/*ハンバーガー押すと反応する部分*/
+nav.globalMenuSp.active {
   position: fixed;
   z-index : 2;
   top  : 0;
@@ -411,30 +415,29 @@ nav2.globalMenuSp {
   text-align: center;
   width: 100%;
   height: 100%;
-  opacity: 0;
   transition: opacity .6s ease, visibility .6s ease;
 }
 
-nav2.globalMenuSp ul {
+nav.globalMenuSp ul {
   margin: 0 auto;
   padding: 0;
   width: 100%;
 }
 
-nav2.globalMenuSp ul li {
+nav.globalMenuSp ul li {
   list-style-type: none;
   padding: 0;
   width: 100%;
   transition: .4s all;
 }
-nav2.globalMenuSp ul li:last-child {
+nav.globalMenuSp ul li:last-child {
   padding-bottom: 0;
 }
-nav2.globalMenuSp ul li:hover{
+nav.globalMenuSp ul li:hover{
   background :#ddd;
 }
 
-nav2.globalMenuSp ul li a {
+nav.globalMenuSp ul li a {
   display: block;
   color: #fff;
   padding: 1em 0;
@@ -442,10 +445,10 @@ nav2.globalMenuSp ul li a {
 }
 
 /* このクラスを、jQueryで付与・削除する */
-nav2.globalMenuSp.active {
+nav.globalMenuSp.active {
   opacity: 100;
 }
-
+/*ずっと反応してしまうので常に消すアクティブの時に反応させる*/
 .globalMenuSp {
   display: none;
 }

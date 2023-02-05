@@ -22,17 +22,17 @@
         <span></span>
       </div>
       <ul class="nav-list">
-        <li class="nav-list-item"><a href="#">Portfolio</a></li>
-        <li class="nav-list-item"><a href="#">Feature</a></li>
-        <li class="nav-list-item"><a href="#">Profile</a></li>
-        <li class="nav-list-item"><a href="#">Contact</a></li>
+        <li class="nav-list-item"><a href="#link_1">Portfolio</a></li>
+        <li class="nav-list-item"><a href="#link_2">Feature</a></li>
+        <li class="nav-list-item"><a href="#link_3">Profile</a></li>
+        <li class="nav-list-item"><a href="#link_4">Contact</a></li>
       </ul>
     </nav>
-    <nav2 class="globalMenuSp">
-        <li class="nav-list-item2">Portfolio</li>
-        <li class="nav-list-item2">Feature</li>
-        <li class="nav-list-item2">Profile</li>
-        <li class="nav-list-item2">Contact</li>
+    <nav class="globalMenuSp">
+        <li class="nav-list-item2"><a href="#link_1">Portfolio</a></li>
+        <li class="nav-list-item2"><a href="#link_2">Feature</a></li>
+        <li class="nav-list-item2"><a href="#link_3">Profile</a></li>
+        <li class="nav-list-item2"><a href="#link_4">Contact</a></li>
       </nav2>
   </header>
 
@@ -43,7 +43,7 @@
 
   <div class="portfolio">
     <div class="container">
-     <h1 class="portfolio-text">Portfolio</h1>
+     <h1 class="portfolio-text" id="link_1">Portfolio</h1>
      <p class="explanatory-note">
        It is a long established fact that a reader will be distracted by the readable</br>
        content of a page when looking at its layout.</br>
@@ -62,7 +62,7 @@
 
   <div class="feature">
     <div class="feature-container">
-      <h1 class="feature-text">Feature</h1>
+      <h1 class="feature-text" id="link_2">Feature</h1>
       <p class="explanatory-note2">
         It is a long established fact that a reader will be distracted by the readable</br>
         content of a page when looking at its layout.</br>
@@ -116,7 +116,7 @@
 
   <div class="profile">
     <div class="profile-container">
-      <h1 class="profile-text">Profile</h1>
+      <h1 class="profile-text" id="link_3">Profile</h1>
       <p class="explanatory-note3">
         It is a long established fact that a reader will be distracted by the readable</br>
         content of a page when looking at its layout.</br>
@@ -142,7 +142,7 @@
 
   <div class="contact">
     <div class="contact-container">
-      <h1 class="contact-text">Contact</h1>
+      <h1 class="contact-text" id="link_4">Contact</h1>
       <p class="explanatory-note2">
         It is a long established fact that a reader will be distracted by the readable</br>
         content of a page when looking at its layout.</br>
@@ -151,14 +151,14 @@
       <div class="contact-group">
         <div class="mail">
           <h5>Mail</h5>
-          <a href="#">m.u19953001@gmail.com</a>
+          <a href="mailto:m.u19953001&#64;gmail.com?subject=こんにちは！">m.u19953001@gmail.com</a>
           <h5 class="tel">Tel</h5>
-          <a href="#">123-4567-890</a>
+          <a href="tel:+81-23-4567-890">123-4567-890</a>
         </div>
         <div class="sns">
           <h5>SNS</h5>
           <i class="fab fa-youtube"></i>
-          <i class="fab fa-twitter"></i>
+          <a class="fab fa-twitter" href="https://twitter.com/motoki_1995" target="_blank"></a>
           <i class="fab fa-instagram"></i>
         </div>
       </div>
@@ -174,13 +174,13 @@
 <script>
   $(function() {
     $('.hamburger').click(function() {
-        $(this).toggleClass('active');
+      $(this).toggleClass('active');
 
-        if ($(this).hasClass('active')) {
-            $('.globalMenuSp').addClass('active');
-        } else {
-            $('.globalMenuSp').removeClass('active');
-        }
+      if ($(this).hasClass('active')) {
+         $('.globalMenuSp').addClass('active');
+        } else{
+         $('.globalMenuSp').removeClass('active');
+      }
     });
-});
+　});
 </script>
