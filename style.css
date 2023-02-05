@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: "Comic Sans MS",serif;
+}
 /*ここでaリンクは色が元に戻り下線が消える*/
 a {
   text-decoration: none;
@@ -110,7 +113,7 @@ nav > :first-child {
 .img1 {
   width: 300px;
   height: 250px;
-  background-image: url(img/sketch.jpg);
+  background-image: url(img/UIFlows.png);
   background-size: cover;
   background-position: center;
   margin: 0 10px 10px 0;
@@ -118,7 +121,7 @@ nav > :first-child {
 .img2 {
   width: 300px;
   height: 250px;
-  background-image: url(img/websuku.png);
+  background-image: url(img/TOP.png);
   background-size: cover;
   background-position: center;
   margin-bottom: 10px;
@@ -126,7 +129,7 @@ nav > :first-child {
 .img3 {
   width: 300px;
   height: 250px;
-  background-image: url(img/write.jpg);
+  background-image: url(img/wanko_bennkyou.png);
   background-size: cover;
   background-position: center;
   margin: 0 0 10px 10px;
@@ -134,7 +137,7 @@ nav > :first-child {
 .img4 {
   width: 300px;
   height: 250px;
-  background-image: url(img/webcamp.png);
+  background-image: url(img/PF1.png);
   background-size: cover;
   background-position: center;
   margin-right: 10px;
@@ -142,14 +145,14 @@ nav > :first-child {
 .img5 {
   width: 300px;
   height: 250px;
-  background-image: url(img/talk.jpg);
+  background-image: url(img/PF2.png);
   background-size: cover;
   background-position: center;
 }
 .img6 {
   width: 300px;
   height: 250px;
-  background-image: url(img/webcamp-mother.png);
+  background-image: url(img/PF3.png);
   background-size: cover;
   background-position: center;
   margin-left: 10px;
@@ -196,7 +199,6 @@ i {
   margin-bottom: 90px;
 }
 .strength-group p {
-  text-align: left;
   font-size: 16px;
   color: #000000;
 }
@@ -250,7 +252,7 @@ i {
 .explanatory-note3 {
   text-align: center;
   margin: 30px 0 10px 0;
-  font-size: 16px;
+  font-size: 30px;
   color: #000000;
 }
 .profile-group {
